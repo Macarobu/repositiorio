@@ -17,7 +17,7 @@
   <img src="{{ asset('assets/iberov2.png') }}" alt="Logo Virtual Research Assistant" class="logo">
   <img src="{{ asset('assets/uNIVERSIDA TRES CULTURAS.png') }}" alt="Logo Virtual Research Assistant" class="logo1">
 
-    <h3>B. componente Realidad</h3>
+    <!-- <h3>B. componente Realidad     hola</h3>
     <form action="#" method="post" class="form-container">
       <label for="titulo">B1. Fenómeno:Situación de una realidad que se presenta de manera arbitraria a los parámetros esperados y que genera la inquietud o necesidad <br>de interpretar/comprender,
         describir el fenómeno.    </label>
