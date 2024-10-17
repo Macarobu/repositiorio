@@ -14,10 +14,35 @@
 </head>
 
 <body>
-  <img src="{{ asset('assets/iberov2.png') }}" alt="Logo Virtual Research Assistant" class="logo">
-  <img src="{{ asset('assets/uNIVERSIDA TRES CULTURAS.png') }}" alt="Logo Virtual Research Assistant" class="logo1">
+    <div class="cabecera">
+        <h1>Crear Proyecto</h1>
+    </div>
+    <div class="container">
+        <img src="{{ asset('assets/iberov2.png') }}"  class="iberov">
+        <img src="{{ asset('assets/uNIVERSIDA TRES CULTURAS.png') }}" class="utc">
+    </div>
+    <form method="post">
+    
+        <h3>A. Caracterización proyecto</h3>
 
-    <h3>A. Caracterización proyecto</h3>
+        <div class="input-wrapper">
+        <input type="text" id="name" placeholder="Nombre" required>
+        </div>
+        <div class="input-wrapper">
+        <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-wrapper">
+        <input type="text" id="direction" placeholder="Direccion" required>
+        </div>
+        <div class="input-wrapper">
+        <input type="tel" id="phone" placeholder="Telefono" required>
+        </div>
+           
+        <input class="btn" type="submit" name="register" value="Enviar">
+        
+    
+    </form>
+    <!--<h3>A. Caracterización proyecto</h3>
     <form action="#" method="post" class="form-container">
       <label for="titulo">Título del proyecto:</label>
       <input type="text" id="titulo" name="titulo" required>
@@ -55,7 +80,7 @@
             <option value="desarrollo">Investigación y Desarrollo</option>
         </select>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar</button>-->
     </form>
 
     <div class="buttons-container">
