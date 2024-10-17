@@ -2,68 +2,99 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
+   /* box-sizing: border-box;*/
+}      
+/* fondo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-image: url('../assets/Fondoinicio.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    
 }
 
+/* contenedor de imagenes*/
 .container {
+   /* text-align: left;*/
+    /*display: flex;*/
+    /*justify-content: right;*/
+    display: inline-block;
+    
+ }
+
+ /*titulo centrado cabecera*/
+.cabecera {
+    position: absolute;
+    float: left;
+    left: 450px;
+    top: 0%;
+    padding-top: 6em;
+    
+
+}
+
+
+/*titulos*/
+h1 {
+    font-size: 45px;
+    color: #333;
     text-align: center;
 }
 
-h1 {
-    font-size: 36px;
-    color: #333;
-    position: relative;
-    top: -100px;
-}
+
+/*textos */
 
 .highlight {
     color: #d9534f;
     text-transform: uppercase;
 }
 
-.buttons-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+/* imagenes*/
+ .iberov {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 250px;
+    position: absolute;
+    right: 0px;
 }
 
-.button-card {
-    margin: 0 20px;
-    text-align: center;
+.utc {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 250px; 
 }
+
+
+/*botones*/
+.buttons-container {
+    position: relative;
+    left: 600px;
+    width: 450px;
+}
+
+
 
 .btn {
-    display: inline-block;
-    padding: 20px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  border: none;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .btn img {
-    max-width: 50px;
+    max-width: 60px;
     margin-bottom: 10px;
 }
 
 .btn-orange {
     background-color: #f0ad4e;
+}
+
+.btn-blue {
+    background-color: #4e79f0;
 }
 
 .btn-green {
@@ -74,148 +105,3 @@ h1 {
     opacity: 0.8;
     transition: 0.3s ease;
 }
-
-body {
-    background-image: url('../assets/Fondoinicio.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Hace que el fondo ocupe toda la altura de la pantalla */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo {
-    width: 180px; /* Ajusta el tamaño del logo según sea necesario */
-    position: absolute;
-    top: 40px; /* Ajusta la distancia desde la parte superior */
-    left: 40px; /* Ajusta la distancia desde la izquierda */
-}
-
-.logo1 {
-    width: 250px; /* Ajusta el tamaño del logo según sea necesario */
-    position: absolute;
-    top: 10px; /* Ajusta la distancia desde la parte superior */
-    left: 1940px;/* Ajusta la distancia desde la izquierda */
-    
-}
-/*style de formulacion */
-
-  
-h3 {
-    font-size: 20px; /* Tamaño de fuente */
-    color: #333; /* Color del texto */
-    text-align: center; /* Centrar el texto */
-    position: absolute; /* Cambiar a absolute para posicionar el encabezado */
-    top: 20px; /* Ajusta el valor según necesites para que quede en la parte superior */
-    left: 50%; /* Posiciona el elemento en el centro horizontal */
-    transform: translateX(-50%); /* Centra el elemento moviéndolo hacia la izquierda la mitad de su ancho */
-    width: absolute; /* Opción para asegurar que ocupe todo el ancho disponible */
-}
-
-form {
-    background-color: rgba(255, 255, 255, 0.338);
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0 0 1000px rgba(0, 0, 0, 0.1);
-}
-label {
-    display: block;
-    margin-bottom: 6px;
-}
-    
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    html, body {
-        height: 100%; /* Asegura que la página ocupe toda la altura de la ventana */
-        margin: 0;    /* Elimina los márgenes predeterminados */
-    }
-    
-    .btn1 {
-        display: inline-block;
-        padding: 20px;
-        border-radius: 50%;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        width: 120px;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #04025c;
-        
-        position: fixed;   /* Fija el botón en la pantalla */
-        bottom: 20px;      /* Coloca el botón 20px desde la parte inferior */
-        right: 500px;  /* Ajusta la posición para que quede perfectamente centrado */
-    }
-    .btn1:hover {
-        background-color: #0013e6; /* Cambia el color del fondo al pasar el mouse */
-    }
-    .btn2 {
-        display: inline-block;
-        padding: 20px;
-        border-radius: 50%;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        width: 120px;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #04025c;
-        
-        position: fixed;   /* Fija el botón en la pantalla */
-        bottom: 20px;      /* Coloca el botón 20px desde la parte inferior */
-       /* right: 20px;  /* Ajusta la posición para que quede perfectamente centrado */
-    }
-    .btn2:hover {
-        background-color: #0013e6; /* Cambia el color del fondo al pasar el mouse */
-    }
-    .btn3 {
-        display: inline-block;
-        padding: 20px;
-        border-radius: 50%;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        width: 120px;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #04025c;
-        
-        position: fixed;   /* Fija el botón en la pantalla */
-        bottom: 20px;      /* Coloca el botón 20px desde la parte inferior */
-        right: 20px;  /* Ajusta la posición para que quede perfectamente centrado */
-    }
-    .btn3:hover {
-        background-color: #0013e6; /* Cambia el color del fondo al pasar el mouse */
-    }
-           
-    input{
-              padding: 1px;
-              width: 800px;
-              height: 30px;
-              
-
-
-    }          
