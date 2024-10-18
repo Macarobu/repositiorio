@@ -23,7 +23,7 @@
                     <img src="{{ asset('assets/iconsformulacion.png') }}" alt="Icono Check">
                     <span>Crear Proyecto</span>
                 </a>  
-                <a href="{{ url('/formulacion') }}" class="btn btn-orange">
+                <a href="{{ url('/Realidad') }}" class="btn btn-orange">
                     <img src="{{ asset('assets/iconsformulacion.png') }}" alt="Icono Check">
                     <span>Formulación Proyecto</span>
                 </a>                

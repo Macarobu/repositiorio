@@ -20,10 +20,11 @@ form{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 380px;
+    width: 800px;
     position: absolute;
     float: left;
-    left: 500px;
+    left: 220px;
+    
 }
 
 /* contenedor de imagenes*/
@@ -56,7 +57,17 @@ form{
 
 }
 
-
+select{
+    
+    color: #0d0d0d;
+    padding: 20px 15px 20px 60px;
+    width: 100%;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
 
 /*titulos*/
 h1 {
@@ -74,8 +85,8 @@ h1 {
 }
 
 .input-wrapper{
-    position: relative;
-    width: 305px;
+    position: absolute;
+    width: 75%;
     margin-bottom: 35px;
 }
 
@@ -87,7 +98,16 @@ input{
     border: 0;
     outline: none;
     font-size: 16px;
+    margin-top: 10px;
 }
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+
 
 /* imagenes*/
  .iberov {
@@ -102,11 +122,20 @@ input{
     height: 250px; 
 }
 
+.input-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20px; 
+    top: 50%;
+    transform: translateY(-55%);
+}
+
 
 /*botones*/
 .buttons-container {
     position: relative;
-    left: 600px;
+    left: 400px;
     width: 450px;
 }
 
@@ -146,3 +175,14 @@ input{
     opacity: 0.8;
     transition: 0.3s ease;
 }
+
+.btnEnviar{
+    padding: 20px;
+    color: #4e79f0;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgba(57, 97, 97, 0.226);
+}
+
+
