@@ -14,8 +14,13 @@
 </head>
 
 <body>
-  <img src="{{ asset('assets/iberov2.png') }}" alt="Logo Virtual Research Assistant" class="logo">
-  <img src="{{ asset('assets/uNIVERSIDA TRES CULTURAS.png') }}" alt="Logo Virtual Research Assistant" class="logo1">
+<div class="cabecera">
+        <h1>Virtual <span class="highlight">Research Assistant</span></h1>
+    </div>
+    <div class="container">
+        <img src="{{ asset('assets/iberov2.png') }}"  class="iberov">
+        <img src="{{ asset('assets/uNIVERSIDA TRES CULTURAS.png') }}" class="utc">
+    </div>
 
     <h3>A. Caracterización proyecto</h3>
     <form action="#" method="post" class="form-container">

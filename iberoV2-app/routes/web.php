@@ -1,24 +1,21 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Barryvdh\DomPDF\Facade\Pdf as PDF;
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/Metodologico', function () {
-    return view('Metodologico');
-})->name('Metodologico');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/crear', function () {
+    return view('posts.crear');
+})->name('Crear');
+Route::post('/', [PostController::class, 'store']);
 
 Route::get('/Realidad', function () {
     return view('Realidad');
 })->name('Realidad');
-
-Route::get('/formulacion', function () {
-    return view('formulacion.formulacion');
-})->name('formulacion');
-
-Route::get('/welcome', function () {
-    return view('welcome');
-})->name('welcome');
